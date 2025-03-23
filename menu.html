@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-container">
+        <h2>Weekly Meal Plan</h2>
+        <div class="tabs">
+            <button class="tab" onclick="showMenu('monday')">Monday</button>
+            <button class="tab" onclick="showMenu('tuesday')">Tuesday</button>
+            <button class="tab" onclick="showMenu('wednesday')">Wednesday</button>
+            <button class="tab" onclick="showMenu('thursday')">Thursday</button>
+            <button class="tab" onclick="showMenu('friday')">Friday</button>
+            <button class="tab" onclick="showMenu('saturday')">Saturday</button>
+            <button class="tab" onclick="showMenu('sunday')">Sunday</button>
+        </div>
+        
+        <div class="menu-content">
+            <div id="monday" class="menu-day">
+                <h3>Monday</h3>
+                <p>🍳 Breakfast: Puttu with kadala curry / Egg roast with appam</p>
+                <p>🥘 Lunch: Kerala sadhya (rice, sambar, thoran, avial, pappadam, pickle) / Meen curry with matta rice</p>
+                <p>🍪 Snacks: Pazhampori / Egg puffs</p>
+                <p>🍛 Dinner: Ulli theeyal with rice / Chicken curry with chapati</p>
+            </div>
+
+            <div id="tuesday" class="menu-day">
+                <h3>Tuesday</h3>
+                <p>🍳 Breakfast: Idiyappam with coconut milk / Mutta curry with idiyappam</p>
+                <p>🥘 Lunch: Moru curry with matta rice & thoran / Kerala-style beef fry with parotta</p>
+                <p>🍪 Snacks: Parippu vada / Chicken samosa</p>
+                <p>🍛 Dinner: Chena mezhukkupuratti with rice / Prawn roast with rice</p>
+            </div>
+
+            <div id="wednesday" class="menu-day">
+                <h3>Wednesday</h3>
+                <p>🍳 Breakfast: Dosa with chutney & sambar / Nadan mutta dosa</p>
+                <p>🥘 Lunch: Pulissery with rice & upperi / Malabar chicken biryani with raita</p>
+                <p>🍪 Snacks: Banana chips / Chicken cutlet</p>
+                <p>🍛 Dinner: Vendakka thoran with rice / Fish fry with kanji</p>
+            </div>
+
+            <div id="thursday" class="menu-day">
+                <h3>Thursday</h3>
+                <p>🍳 Breakfast: Appam with vegetable stew / Mutton stew with appam</p>
+                <p>🥘 Lunch: Kootu curry with rice / Prawns theeyal with rice</p>
+                <p>🍪 Snacks: Kappa with chammanthi / Beef fry with pathiri</p>
+                <p>🍛 Dinner: Chakka curry with rice / Squid roast with rice</p>
+            </div>
+
+            <div id="friday" class="menu-day">
+                <h3>Friday</h3>
+                <p>🍳 Breakfast: Pathiri with coconut milk & sugar / Chicken curry with pathiri</p>
+                <p>🥘 Lunch: Theeyal with rice & mezhukkupuratti / Malabar fish curry with matta rice</p>
+                <p>🍪 Snacks: Sugiyan / Chicken spring rolls</p>
+                <p>🍛 Dinner: Cabbage thoran with rice / Nadan kozhi peralan</p>
+            </div>
+
+            <div id="saturday" class="menu-day">
+                <h3>Saturday</h3>
+                <p>🍳 Breakfast: Kozhukatta / Duck roast with appam</p>
+                <p>🥘 Lunch: Erissery with rice & pappadam / Kerala-style beef curry with porotta</p>
+                <p>🍪 Snacks: Unniyappam / Egg bajji</p>
+                <p>🍛 Dinner: Avial with rice / Crab roast with rice</p>
+            </div>
+
+            <div id="sunday" class="menu-day">
+                <h3>Sunday</h3>
+                <p>🍳 Breakfast: Neypathal with coconut chutney / Kallappam with mutta curry</p>
+                <p>🥘 Lunch: Kerala sadhya (rice, sambar, avial, kalan, pappadam, payasam) / Mutton chaps with ghee rice</p>
+                <p>🍪 Snacks: Ela ada / Chicken kebabs</p>
+                <p>🍛 Dinner: Thakkali curry with rice / Meen pollichathu</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

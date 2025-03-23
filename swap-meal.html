@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap Meal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Swap Meal</h2>
+
+        <label for="usernameInput">Enter your username:</label>
+        <input type="text" id="usernameInput" placeholder="Enter your username">
+        <button onclick="fetchMealDetails()">Check My Meals</button>
+
+        <div id="swapPrompt" style="display: none;">
+            <p><strong>Your booked meal:</strong> <span id="mealType">-</span></p>
+            <p>Do you want to swap your meal?</p>
+            <button onclick="showSwapOptions()">Yes</button>
+            <button onclick="cancelSwap()">No</button>
+        </div>
+
+        <div id="swapOptions" style="display: none;">
+            <label for="newMealType">Select meal type to swap:</label>
+            <select id="newMealType">
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Snacks">Snacks</option>
+                <option value="Dinner">Dinner</option>
+            </select>
+            <button onclick="confirmSwap()">Confirm Swap</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

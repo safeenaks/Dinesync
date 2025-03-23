@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Meal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Book a Meal</h2>
+        <label for="daySelect">Select Day:</label>
+        <select id="daySelect">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select>
+
+        <h3>Available Meals:</h3>
+        <label><input type="radio" name="mealType" value="Breakfast"> Breakfast</label>
+        <label><input type="radio" name="mealType" value="Lunch"> Lunch</label>
+        <label><input type="radio" name="mealType" value="Snacks"> Snacks</label>
+        <label><input type="radio" name="mealType" value="Dinner"> Dinner</label>
+
+        <label for="username">Enter Username:</label>
+        <input type="text" id="username" placeholder="Enter your username">
+
+        <button onclick="bookMeal()">Book Meal</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
